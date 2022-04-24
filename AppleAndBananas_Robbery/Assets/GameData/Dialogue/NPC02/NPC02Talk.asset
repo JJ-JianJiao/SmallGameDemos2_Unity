@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e66854852ed38846a06a3bb7aebebde, type: 3}
+  m_Name: NPC02Talk
+  m_EditorClassIdentifier: 
+  dialoguePieces:
+  - ID: Piece01
+    image: {fileID: 0}
+    text: 'Don''t shoot me.
+
+      You scare my sh*t off!!!
+
+      What do you want?'
+    options:
+    - text: Do not scare, I am your friend!
+      targetID: Piece02
+      takeQuest: 0
+      takeAction: 
+      giveItem: 0
+      gold: 0
+      weight: 0
+    - text: Give me all your money!
+      targetID: Piece03
+      takeQuest: 0
+      takeAction: 
+      giveItem: 0
+      gold: 0
+      weight: 0
+  - ID: Piece02
+    image: {fileID: 0}
+    text: 'Ohhhh~
+
+      You are my new friend!
+
+      Have a good day'
+    options:
+    - text: You too, blue sh*t!
+      targetID: 
+      takeQuest: 0
+      takeAction: 
+      giveItem: 0
+      gold: 0
+      weight: 2
+  - ID: Piece03
+    image: {fileID: 0}
+    text: 'Here you are.
+
+      This is all I have. (100 Gold)'
+    options:
+    - text: Hurry Up! Give it to me!
+      targetID: 
+      takeQuest: 0
+      takeAction: 
+      giveItem: 1
+      gold: 100
+      weight: 1
